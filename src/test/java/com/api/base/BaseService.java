@@ -14,7 +14,7 @@ public class BaseService {
 		requestSpecification = given().baseUri(BASE_URL);
 	}
 	
-	protected Response postRequest(String requestPayload, String endpoint) {
+	protected Response postRequest(Object requestPayload, String endpoint) {
 		return requestSpecification.contentType(ContentType.JSON).body(requestPayload).post(endpoint);
 	}
 }
