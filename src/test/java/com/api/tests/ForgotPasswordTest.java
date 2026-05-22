@@ -1,12 +1,13 @@
 package com.api.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthenticationServices;
 
 import io.restassured.response.Response;
-
+@Listeners(com.api.listeners.TestListener.class)
 public class ForgotPasswordTest {
 	@Test(description = "Verify forgot password test")
 	public void forgotPasswordTest() {
