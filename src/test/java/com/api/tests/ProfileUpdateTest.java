@@ -1,6 +1,7 @@
 package com.api.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthenticationServices;
@@ -12,7 +13,7 @@ import com.api.models.response.LoginResponse;
 import com.api.models.response.UpdateProfileResponse;
 
 import io.restassured.response.Response;
-
+@Listeners(com.api.listeners.TestListener.class)
 public class ProfileUpdateTest {
 	@Test(description = "Verify whether we are able to update the profile")
 	public void profileUpdate() {
