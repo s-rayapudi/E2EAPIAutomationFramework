@@ -25,6 +25,7 @@ public class GetProfileTest {
 		GetProfileResponse getProfileResponse = response.as(GetProfileResponse.class);
 		Assert.assertEquals(getProfileResponse.getUsername(), "sandeep_r");
 		Assert.assertEquals(getProfileResponse.getEmail(), "sandeep@qa.com");
+		Assert.assertEquals(getProfileResponse.getMobileNumber(), "9848022331");
 		
 	}
 	
