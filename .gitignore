@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-# Maven build output
-target/
-
-# Test output
-test-output/
-
-# Eclipse IDE files
-.classpath
-.project
-.settings/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Log files
-*.log
-=======
 test-output/
 target/
 *.log
@@ -24,4 +5,5 @@ target/
 .project
 .settings/
 *.prefs
->>>>>>> df32d67 (chore: add gitignore and remove IDE files from tracking)
+.DS_Store
+Thumbs.db
