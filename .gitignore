@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Maven build output
 target/
 
@@ -15,3 +16,12 @@ Thumbs.db
 
 # Log files
 *.log
+=======
+test-output/
+target/
+*.log
+.classpath
+.project
+.settings/
+*.prefs
+>>>>>>> df32d67 (chore: add gitignore and remove IDE files from tracking)
